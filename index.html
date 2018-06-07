@@ -1,0 +1,303 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title></title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.38.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.38.0/mapbox-gl.css' rel='stylesheet' />
+    <style>
+        body { margin:0; padding:0; }
+        #map { position:absolute; top:0; bottom:0; width:100%; }
+        .mapboxgl-popup {
+            font: 12px/20px 'Rockwell', Arial, Helvetica, sans-serif;
+}
+        .mapboxgl-popup-close-button {
+          display:none;
+        }
+        .mapboxgl-popup-content{
+          padding:10px 15px 5px;
+        }
+        .map-overlay_legend {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.8);
+    margin-right: 20px;
+    font-weight:bolder;
+    font:12px/18px 'Roboto', Arial, Helvetica, sans-serif !important;
+    overflow: auto;
+    border-radius: 3px;}
+
+    .map-overlay_title {
+position: absolute;
+Top: 12px;
+left: 0;
+background: rgba(255, 255, 255, 0.8);
+margin-left: 20px;
+font-weight:bolder;
+font:30px/30px 'Roboto', Arial, Helvetica, sans-serif !important;
+overflow: auto;
+border-radius: 3px;}
+
+.map-overlay_logo {
+position: absolute;
+bottom: 0;
+left: 0;
+margin-left: 20px;
+margin-bottom:30px !important;
+overflow: auto;
+border-radius: 3px;}
+
+a.mapboxgl-ctrl-logo {
+    width: 85px;
+    height: 21px;
+    margin: 0 0 -3px -3px;
+    display: none;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiP…gsOS40MyAxMC42Niw4LjUzIDExLjU2LDYuNjYgMTIuNDcsOC41MyAgICIvPjwvZz48L3N2Zz4=);
+}
+#title {
+padding: 10px;
+box-shadow: 0 1px 2px rgba(0,0,0,0.10);
+line-height: 18px;
+height: 30px;
+width: 633px;
+}
+
+    #legend {
+    padding: 10px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.10);
+    line-height: 18px;
+    height: 153px;
+    margin-bottom: 40px;
+    width: 300px;
+}
+.legend-key {
+    display:inline-block;
+    border-radius: 20%;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+    font:12px/18px 'Roboto', Arial, Helvetica, sans-serif !important;
+}
+#image{
+  width:300px;
+  float:left;
+}
+#text{
+float:right;
+max-width:360px;
+margin-left:0px;
+}
+iframe {
+  border-width:0px !important;
+  width:320px;
+  height:176px
+}
+.list-group {padding-left:0px;margin-bottom:0px}
+.list-group-item {padding-left:6px;
+}
+.list-group-item_subtext {
+  padding-left:20px;
+  font:12px/15px 'Roboto', Arial, Helvetica, sans-serif !important;
+}
+.sg-question-options{
+  padding-left:0px !important
+}
+.sg-question-set{
+  height:129px
+}
+.sg-question-title{
+  width:284px !important
+}
+
+#header{
+  font-weight:bolder;
+  font:30px/30px 'Roboto', Arial, Helvetica, sans-serif !important;
+      display: inline-block;
+      word-break: break-word;
+      width: 362px;
+}
+
+.sg-body {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif !important;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    background-color: rgba(239,239,239,0)!important;
+    height:140px !important;
+}
+
+.sg-body .sg-page-1 .sg-pageid-1 .sg-webkit .sg-ltr .sg-replace-icons {
+padding-bottom:0px !important;
+}
+#sgE-3698230-1-2-element {
+    height: 50px;
+    padding: 0px;
+    border: 1px solid;
+}
+.sg-input-essay{
+  border:1px solid #000000;
+}
+#sgbody-3698230{
+padding-bottom:0px !important;
+}
+
+.sg-survey .sg-survey-form {
+    height: 140px !important;
+}
+.sg-content {
+  height:110px !important;
+}
+    </style>
+</head>
+<body>
+
+<div id='map'></div>
+<div class='map-overlay_title' id='title'>Master Transportation Plan Recommendations</div>
+<div class='map-overlay_logo' id='logo'><img src="https://raw.githubusercontent.com/tooledesign/GSATS/master/GSATS_Logo.png"></div>
+<div class='map-overlay_legend' id='legend'>
+  <b>Instructions</b>
+<p style="margin-top:0px">Click on a draft recommendation line to see more information and add your comments.</p>
+  <b>Draft Recommendations</b>
+
+</div>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoidG9vbGVkZXNpZ24iLCJhIjoiNTcyZTIwNmExODVmYTAzZDA0NWQ0YTFlNTA1YWMyZjcifQ.5bYQWlwCYVUnqJFPTx1DWg';
+var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/tooledesign/cirdiova90008gfnnyk6b4o5z',
+    center: [-78.9295,33.6118],
+    zoom: 10.2,
+    hash: true
+});
+
+map.on('load', function () {
+  // define layer names
+
+
+    map.addSource("recs", {
+        "type": "geojson",
+        "data": "https://raw.githubusercontent.com/tooledesign/GSATS/master/gsatsrecsurl_fromhor.geojson"
+    });
+
+    map.addLayer({
+          "id": "facilities_hover",
+          "type": "line",
+          "source": "recs",
+          "layout": {
+            "line-join": "round",
+            "line-cap":"round"
+          },
+          "paint": {
+              "line-color": {
+                "property": "Category",
+                "type":"categorical",
+                "stops": [
+                  ["Widening","#F2B434"],
+                  ["Access Management/Streetscape/Complete Streets","#5B4A9E"],
+                  ["New Construction","#6B154B"]
+
+                ]
+              },
+              "line-opacity": 1,
+              "line-width": 10
+          },
+          "filter": ["==", "NewID", ""]
+      },'bridge-oneway-arrows-white');
+
+    map.addLayer({
+        "id": "facilities",
+        "type": "line",
+        "source": "recs",
+        "layout": {
+          "line-join": "round",
+          "line-cap":"round"
+        },
+        "paint": {
+            "line-color": {
+              "property": "Category",
+              "type":"categorical",
+              "stops": [
+             ["Widening","#F2B434"],
+                  ["Access Management/Streetscape/Complete Streets","#5B4A9E"],
+                  ["New Construction","#6B154B"]
+
+              ]
+            },
+            "line-opacity": 1,
+            "line-width": 5,
+
+    }},'bridge-oneway-arrows-white');
+    var layers = ['Access Management/Streetscape/Complete Streets', 'New Construction', 'Widening'];
+    var colors = ['#5B4A9E', '#6B154B', '#F2B434'];
+
+    // create legend
+    for (i=0; i<layers.length; i++) {
+        var layer = layers[i];
+        var color = colors[i];
+        var item = document.createElement('div');
+        var key = document.createElement('span');
+        key.className = 'legend-key';
+        key.style.backgroundColor = color;
+
+        var value = document.createElement('span');
+        value.innerHTML = layer;
+        item.appendChild(key);
+        item.appendChild(value);
+        legend.appendChild(item);
+    };
+    map.on('click', function(e) {
+        var features = map.queryRenderedFeatures(e.point, { layers: ['facilities'] });
+
+        // if the features have no info, return nothing
+        if (!features.length) {
+            return;
+        }
+
+        var feature = features[0];
+
+        // Populate the popup and set its coordinates
+        // based on the feature found
+        var popup = new mapboxgl.Popup({keepInView:true})
+            .setLngLat(e.lngLat)
+             .setHTML('<div id="popup" class="popup" style="z-index: 10;">' +
+                '<div id="text">' +
+                '<ul class="list-group">' + '<ul class="list-group-item" id = "header">' + feature.properties['Category'] + "</ul>" +
+                '<ul class="list-group-item"> <b> Project # </b>' + feature.properties['Project_nu'] + " </ul>" +
+                '<ul class="list-group-item">' + feature.properties['Descriptio'] + " </ul>" +
+                '<ul class="list-group-item"> <b> Cost (in Millions): </b>' + feature.properties['Cost_est_m'] + " </ul>" +
+                '<ul style="padding-left:0px">' + '<iframe src="'+ feature.properties['URL'] +'style="width:300px; border-width:0px !important" "frameborder="0"></iframe>' + " </ul>" + '</ul></div> </div>')
+
+            .addTo(map);
+    });
+
+
+    map.on('mouseenter', 'facilities', function () {
+    map.getCanvas().style.cursor = 'pointer';
+});
+
+// Change it back to a pointer when it leaves.
+map.on('mouseleave', 'facilities', function () {
+    map.getCanvas().style.cursor = '';
+});
+
+    // When the user moves their mouse over the states-fill layer, we'll update the filter in
+    // the state-fills-hover layer to only show the matching state, thus making a hover effect.
+    map.on("mousemove", "facilities", function(e) {
+        map.setFilter("facilities_hover", ["==", "NewID", e.features[0].properties.NewID]);
+   });
+
+//    // Reset the state-fills-hover layer's filter when the mouse leaves the layer.
+    map.on("mouseleave", "facilities", function() {
+        map.setFilter("facilities_hover", ["==", "NewID", ""]);
+    });
+});
+</script>
+
+</body>
+</html>
+</html>
