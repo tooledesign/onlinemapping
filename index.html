@@ -5,8 +5,8 @@
     <meta charset='utf-8' />
     <title></title>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.38.0/mapbox-gl.js'></script>
-    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.38.0/mapbox-gl.css' rel='stylesheet' />
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.45.0/mapbox-gl.js'></script>
+<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.45.0/mapbox-gl.css' rel='stylesheet' />
     <style>
         body { margin:0; padding:0; }
         #map { position:absolute; top:0; bottom:0; width:100%; }
@@ -60,20 +60,21 @@ a.mapboxgl-ctrl-logo {
     background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiP…gsOS40MyAxMC42Niw4LjUzIDExLjU2LDYuNjYgMTIuNDcsOC41MyAgICIvPjwvZz48L3N2Zz4=);
 }
 #title {
-padding: 10px;
+padding: 0px 10px 10px 10px;
 box-shadow: 0 1px 2px rgba(0,0,0,0.10);
 line-height: 18px;
-height: 30px;
-width: 633px;
+height: 7%;
+width: 30%;
+overflow:hidden;
 }
 
     #legend {
     padding: 10px;
     box-shadow: 0 1px 2px rgba(0,0,0,0.10);
     line-height: 18px;
-    height: 153px;
+    height: 33%;
     margin-bottom: 40px;
-    width: 300px;
+    width: 20%;
 }
 .legend-key {
     display:inline-block;
@@ -84,17 +85,16 @@ width: 633px;
     font:12px/18px 'Roboto', Arial, Helvetica, sans-serif !important;
 }
 #image{
-  width:300px;
   float:left;
 }
 #text{
 float:right;
-max-width:360px;
+max-width:250px;
 margin-left:0px;
 }
 iframe {
   border-width:0px !important;
-  width:320px;
+  width:100%;
   height:176px
 }
 .list-group {padding-left:0px;margin-bottom:0px}
@@ -108,15 +108,15 @@ iframe {
   padding-left:0px !important
 }
 .sg-question-set{
-  height:129px
+  height:129px !important;
 }
 .sg-question-title{
-  width:284px !important
+  width:100% !important
 }
 
 #header{
   font-weight:bolder;
-  font:30px/30px 'Roboto', Arial, Helvetica, sans-serif !important;
+  font:20px/20px 'Roboto', Arial, Helvetica, sans-serif !important;
       display: inline-block;
       word-break: break-word;
       width: 362px;
@@ -129,10 +129,12 @@ iframe {
     color: #000000;
     background-color: rgba(239,239,239,0)!important;
     height:140px !important;
+    overflow: hidden !important;
 }
 
 .sg-body .sg-page-1 .sg-pageid-1 .sg-webkit .sg-ltr .sg-replace-icons {
 padding-bottom:0px !important;
+   overflow: hidden !important;
 }
 #sgE-3698230-1-2-element {
     height: 50px;
@@ -144,34 +146,47 @@ padding-bottom:0px !important;
 }
 #sgbody-3698230{
 padding-bottom:0px !important;
+   overflow: hidden !important;
 }
 
 .sg-survey .sg-survey-form {
     height: 140px !important;
+       overflow: hidden !important;
 }
 .sg-content {
-  height:110px !important;
+    padding: 0em 30px 2em !important;
+    margin: auto !important;
+       overflow: hidden !important;
+}
+#sg-skipnav-target {
+padding-top: 0px !important;
+   overflow: hidden !important;
 }
     </style>
 </head>
 <body>
 
 <div id='map'></div>
-<div class='map-overlay_title' id='title'>Master Transportation Plan Recommendations</div>
-<div class='map-overlay_logo' id='logo'><img src="https://raw.githubusercontent.com/tooledesign/GSATS/master/GSATS_Logo.png"></div>
+<div class='map-overlay_title' id='title'>Bicycle Master Plan Draft Recommendations</div>
+<div class='map-overlay_logo' id='logo'><img src="https://github.com/tooledesign/napabikeplan/raw/master/Seal_of_Napa_County%2C_California.png" style = "width:15%"></div>
 <div class='map-overlay_legend' id='legend'>
   <b>Instructions</b>
-<p style="margin-top:0px">Click on a draft recommendation line to see more information and add your comments.</p>
-  <b>Draft Recommendations</b>
+<p style="margin-top:0px">Click on a draft recommendation line to weigh in.</p>
+
+<p style="margin-top:0px">Think a corridor should have a bike facility but there isn't one shown? <br> Let us know 
+<a href="https://www.surveygizmo.com/s3/4412953/Napa-County-Bike-Plan-AdditionalFacilities">here</a>. </p>
+
+  <b>Draft Recommendations</b><br>
+  <i>Existing facilities faded.</i>
 
 </div>
 <script>
 mapboxgl.accessToken = 'pk.eyJ1IjoidG9vbGVkZXNpZ24xIiwiYSI6ImNpeXZwdGZ1YTAwMmUyd3FhZGFtaHB1a2kifQ.7YtZldK9lYWNVfrZabNlbQ';
 var map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/tooledesign1/cji6585vq3nrd2rpjit4pm6ep',
-    center: [-78.9295,33.6118],
-    zoom: 10.2,
+    style: 'mapbox://styles/tooledesign1/cji99oiov6yah2rpreel7y8my',
+    center: [-122.3257,38.529],
+    zoom: 9.11,
     hash: true
 });
 
@@ -181,7 +196,7 @@ map.on('load', function () {
 
     map.addSource("recs", {
         "type": "geojson",
-        "data": "https://raw.githubusercontent.com/tooledesign/GSATS/master/gsatsrecsurl_fromhor.geojson"
+        "data": "https://raw.githubusercontent.com/tooledesign/napabikeplan/master/proposedfacilities_wgs84_3.geojson"
     });
 
     map.addLayer({
@@ -194,20 +209,24 @@ map.on('load', function () {
           },
           "paint": {
               "line-color": {
-                "property": "Category",
+                "property": "class",
                 "type":"categorical",
                 "stops": [
-                  ["Widening","#F2B434"],
-                  ["Access Management/Streetscape/Complete Streets","#5B4A9E"],
-                  ["New Construction","#6B154B"]
+                  ["Class I Multi Use Path","#539051"],
+                  ["Class II Bike Lane","#4a74a1"],
+                  ["Class III Bike Route","#b49055"],
+                  ["Class III Bike Boulevard","#b49055"],
+                  ["Class IV Separated Bike Lane","#a055b4"]
 
                 ]
               },
               "line-opacity": 1,
-              "line-width": 10
+              "line-width": {base:1.2,
+ stops: [[0, 2],[22, 22]]
+},
           },
-          "filter": ["==", "NewID", ""]
-      },'bridge-oneway-arrows-white');
+          "filter": ["==", "id", ""]
+      },'existingfacilities');
 
     map.addLayer({
         "id": "facilities",
@@ -219,21 +238,25 @@ map.on('load', function () {
         },
         "paint": {
             "line-color": {
-              "property": "Category",
+              "property": "class",
               "type":"categorical",
               "stops": [
-             ["Widening","#F2B434"],
-                  ["Access Management/Streetscape/Complete Streets","#5B4A9E"],
-                  ["New Construction","#6B154B"]
+             ["Class I Multi Use Path","#539051"],
+                  ["Class II Bike Lane","#4a74a1"],
+                  ["Class III Bike Route","#b49055"],
+                  ["Class III Bike Boulevard","#b49055"],
+                  ["Class IV Separated Bike Lane","#a055b4"]
 
               ]
             },
             "line-opacity": 1,
-            "line-width": 5,
+            "line-width": {base:1.2,
+ stops: [[0, 1],[22, 15]]
+},
 
-    }},'bridge-oneway-arrows-white');
-    var layers = ['Access Management/Streetscape/Complete Streets', 'New Construction', 'Widening'];
-    var colors = ['#5B4A9E', '#6B154B', '#F2B434'];
+    }},'existingfacilities');
+    var layers = ['Class I Multi Use Path', 'Class II Bike Lane', 'Class III Bike Route/Bike Boulevard','Class IV Separated Bike Lane'];
+    var colors = ['#539051', '#4a74a1', '#b49055','#a055b4'];
 
     // create legend
     for (i=0; i<layers.length; i++) {
@@ -266,11 +289,8 @@ map.on('load', function () {
             .setLngLat(e.lngLat)
              .setHTML('<div id="popup" class="popup" style="z-index: 10;">' +
                 '<div id="text">' +
-                '<ul class="list-group">' + '<ul class="list-group-item" id = "header">' + feature.properties['Category'] + "</ul>" +
-                '<ul class="list-group-item"> <b> Project # </b>' + feature.properties['Project_nu'] + " </ul>" +
-                '<ul class="list-group-item">' + feature.properties['Descriptio'] + " </ul>" +
-                '<ul class="list-group-item"> <b> Cost (in Millions): </b>' + feature.properties['Cost_est_m'] + " </ul>" +
-                '<ul style="padding-left:0px">' + '<iframe src="'+ feature.properties['URL'] +'style="width:300px; border-width:0px !important" "frameborder="0"></iframe>' + " </ul>" + '</ul></div> </div>')
+                '<ul class="list-group">' + '<ul class="list-group-item" id = "header">' + feature.properties['class'] + "</ul>" +
+                '<ul style="padding-left:0px">' + '<iframe src="'+ feature.properties['url'] +'style="width:300px; border-width:0px !important" "frameborder="0"></iframe>' + " </ul>" + '</ul></div> </div>')
 
             .addTo(map);
     });
@@ -288,12 +308,12 @@ map.on('mouseleave', 'facilities', function () {
     // When the user moves their mouse over the states-fill layer, we'll update the filter in
     // the state-fills-hover layer to only show the matching state, thus making a hover effect.
     map.on("mousemove", "facilities", function(e) {
-        map.setFilter("facilities_hover", ["==", "NewID", e.features[0].properties.NewID]);
+        map.setFilter("facilities_hover", ["==", "id", e.features[0].properties.id]);
    });
 
 //    // Reset the state-fills-hover layer's filter when the mouse leaves the layer.
     map.on("mouseleave", "facilities", function() {
-        map.setFilter("facilities_hover", ["==", "NewID", ""]);
+        map.setFilter("facilities_hover", ["==", "id", ""]);
     });
 });
 </script>
