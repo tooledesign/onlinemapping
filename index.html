@@ -65,7 +65,7 @@ padding: 0px 10px 10px 10px;
 box-shadow: 0 1px 2px rgba(0,0,0,0.10);
 line-height: 18px;
 height: 24px;
-width: 555px;
+width: 508px;
 overflow:hidden;
 }
 
@@ -185,13 +185,17 @@ width:100%}
 </div>
 <script>
 mapboxgl.accessToken = 'pk.eyJ1IjoidG9vbGVkZXNpZ24xIiwiYSI6ImNpeXZwdGZ1YTAwMmUyd3FhZGFtaHB1a2kifQ.7YtZldK9lYWNVfrZabNlbQ';
+if (!mapboxgl.supported()) {
+    alert('Your browser does not support Mapbox GL');
+} else {
+
 var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/tooledesign1/cji99oiov6yah2rpreel7y8my',
     center: [-122.3257,38.529],
     zoom: 9.11,
     hash: true
-});
+})};
 
 map.on('load', function () {
   // define layer names
