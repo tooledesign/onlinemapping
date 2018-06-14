@@ -73,9 +73,10 @@ overflow:hidden;
     padding: 10px;
     box-shadow: 0 1px 2px rgba(0,0,0,0.10);
     line-height: 18px;
-    height: 290px;
+    height: 320px;
     margin-bottom: 40px;
     width: 339px;
+    overflow:hidden;
 }
 .legend-key {
     display:inline-block;
@@ -170,17 +171,17 @@ width:100%}
 <body>
 
 <div id='map'></div>
-<div class='map-overlay_title' id='title'>Napa County Bicycle Master Plan Update</div>
+<div class='map-overlay_title' id='title'>Napa Countywide Bicycle Plan Update</div>
 <div class='map-overlay_logo' id='logo'><img src="https://raw.githubusercontent.com/tooledesign/napabikeplan/master/NVTA_name_high_res.png" style = "width:100%"></div>
 <div class='map-overlay_legend' id='legend'>
   <b>Instructions</b>
-<p style="margin-top:0px">Click on a draft recommendation line to weigh in.<br> <i>Bike facility descriptions can be found <a href="https://github.com/tooledesign/napabikeplan/raw/master/2018-06-12_Online%20map%20facilities%20sheet.pdf">here</a>.</i></p>
+<p style="margin-top:0px">Click on the street recommendation line (zoom in for greater detail and street names) to leave your comment.<br> <i>Bike facility descriptions can be found <a href="https://tooledesign.github.io/napabikeplan/facilitydescriptions.html"target="blank">here</a>.</i></p>
 
-<p style="margin-top:0px">Think a corridor should have a bike facility but there isn't one shown? <br>
+<p style="margin-top:0px">Think a street should have a bike facility but there isn't one shown? <br>
 <a href="https://www.surveygizmo.com/s3/4412953/Napa-County-Bike-Plan-AdditionalFacilities">Let us know.</a> </p>
 
   <b>Facilities</b><br>
-<img src="https://raw.githubusercontent.com/tooledesign/napabikeplan/master/napalegend2.svg?sanitize=true">
+<img src="https://raw.githubusercontent.com/tooledesign/napabikeplan/master/napalegend3.svg?sanitize=true">
 </div>
 <script>
 mapboxgl.accessToken = 'pk.eyJ1IjoidG9vbGVkZXNpZ24xIiwiYSI6ImNpeXZwdGZ1YTAwMmUyd3FhZGFtaHB1a2kifQ.7YtZldK9lYWNVfrZabNlbQ';
@@ -222,7 +223,7 @@ map.on('load', function () {
                   ["Class I Multi Use Path","#b3006e"],
                   ["Vine Trail","#00b40f"],
                   ["Class II Bike Lane","#00a0d1"],
-                  ["Class III Rural Bike Route","#fdc34e"],
+                  ["Class III Rural Bike Route","#e4cf1d"],
                   ["Class III Bike Boulevard","#ff7f00"],
                   ["Class IV Separated Bike Lane","#8116f4"]
                 ]
@@ -260,7 +261,7 @@ map.on('load', function () {
           },
           "filter":["==", "id", ""]
       },'admin-2-boundaries-dispute');
-      
+
     map.addLayer({
         "id": "facilities",
         "type": "line",
@@ -277,7 +278,7 @@ map.on('load', function () {
                   ["Class I Multi Use Path","#b3006e"],
                   ["Vine Trail","#00b40f"],
                   ["Class II Bike Lane","#00a0d1"],
-                  ["Class III Rural Bike Route","#fdc34e"],
+                  ["Class III Rural Bike Route","#e4cf1d"],
                   ["Class III Bike Boulevard","#ff7f00"],
                   ["Class IV Separated Bike Lane","#8116f4"]
 
@@ -290,7 +291,7 @@ map.on('load', function () {
             "line-dasharray":[.5,2],
 
     }},'waterway-label');
-    
+
         map.addLayer({
         "id": "corridors",
         "type": "line",
@@ -304,7 +305,7 @@ map.on('load', function () {
               "property": "label",
               "type":"categorical",
               "stops": [
-              
+
                   ["Corridor Study","#b2b2b2"],
 
               ]
@@ -404,7 +405,7 @@ map.on('mouseleave', 'corridors', function () {
     map.on("mouseleave", "facilities", function() {
         map.setFilter("facilities_hover", ["==", "id", ""]);
     });
-    
+
         map.on("mousemove", "corridors", function(e) {
         map.setFilter("corridor_hover", ["==", "id", e.features[0].properties.id]);
    });
