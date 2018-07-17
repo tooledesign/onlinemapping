@@ -173,7 +173,7 @@ width:100%}
 <div id='map'></div>
 <div class='map-overlay_title' id='title'>Napa Countywide Bicycle Plan Update
      <br>Proposed Bicycle Facility Recommendations</div>
-<div class='map-overlay_logo' id='logo'><img src="https://raw.githubusercontent.com/tooledesign/napabikeplan/master/NVTA_name_high_res.png" style = "width:100%"></div>
+<div class='map-overlay_logo' id='logo'><img src="https://raw.githubusercontent.com/tooledesign/onlinemapping/master/NVTA_name_high_res.png" style = "width:100%"></div>
 <div class='map-overlay_legend' id='legend'>
   <b>Instructions</b>
 <p style="margin-top:0px">Click on the street recommendation line (zoom in for greater detail and street names) to leave your comment.<br> <i>Bike facility descriptions can be found <a href="https://tooledesign.github.io/napabikeplan/facilitydescriptions.html"target="blank">here</a>.</i></p>
@@ -182,7 +182,7 @@ width:100%}
 <a href="https://www.surveygizmo.com/s3/4412953/Napa-County-Bike-Plan-AdditionalFacilities">Let us know.</a> </p>
 
   <b>Facilities</b><br>
-<img src="https://raw.githubusercontent.com/tooledesign/napabikeplan/master/napalegend3.svg?sanitize=true">
+<img src="https://raw.githubusercontent.com/tooledesign/onlinemapping/master/napalegend3.svg?sanitize=true">
 </div>
 <script>
 mapboxgl.accessToken = 'pk.eyJ1IjoidG9vbGVkZXNpZ24xIiwiYSI6ImNpeXZwdGZ1YTAwMmUyd3FhZGFtaHB1a2kifQ.7YtZldK9lYWNVfrZabNlbQ';
@@ -204,12 +204,12 @@ map.on('load', function () {
 
     map.addSource("recs", {
         "type": "geojson",
-        "data": "https://raw.githubusercontent.com/tooledesign/napabikeplan/master/proposedfacilities_20180611_4.geojson"
+        "data": "https://raw.githubusercontent.com/tooledesign/onlinemapping/master/proposedfacilities_20180611_4.geojson"
     });
 
     map.addSource("corridors", {
         "type": "geojson",
-        "data": "https://raw.githubusercontent.com/tooledesign/napabikeplan/master/corridorstudy_20180611.geojson"
+        "data": "https://raw.githubusercontent.com/tooledesign/onlinemapping/master/corridorstudy_20180611.geojson"
     });
 
     map.addLayer({
