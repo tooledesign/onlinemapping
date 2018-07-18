@@ -3,7 +3,9 @@
 1) Set up new repository on github with your project name (https://github.com/organizations/tooledesign/repositories/new)
 2) Create a file named index.html in this repository. 
 3) Copy the index.html text from the onlinemapping repository (https://raw.githubusercontent.com/tooledesign/onlinemapping/master/index.html) into your index.html file and Commit Changes at the bottom.
-Under the Settings tab, scroll to GitHub Pages and under Source, change "none" to "master" and press "Save". The web address for your hosted map is at the end of the "Your site is ready to be published at" sentence above the "Save" button. 
+4) Under the Settings tab, scroll to GitHub Pages and under Source, change "none" to "master" and press "Save". The web address for your hosted map is at the end of the "Your site is ready to be published at" sentence above the "Save" button. 
+5) At this point, your map should look exactly like https://tooledesign.github.io/onlinemapping/
+
 2) Create mapbox basemap style (https://www.mapbox.com/studio/). If you would like to represent existing facilities on this basemap, upload them as a tileset and style them. If you are unsure how to use mapbox, consult with Rohan, Kyle, or other Toole Design experts. 
 3) After publishing the style, replace the style URL in the index.html here (https://github.com/tooledesign/onlinemapping/blob/970000f174dbcc11b012d2ddb099b364e0d8fcf4/index.html#L195) with your own(e.g. mapbox://styles/tooledesign1/cji99oiov6yah2rpreel7y8my). On subsequent lines, adjust the center of the map (lat/long) and the initial map zoom level. 
 4) At this point, commit the changes in ou
