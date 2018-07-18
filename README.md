@@ -7,8 +7,8 @@
 5) At this point, your map should look exactly like https://tooledesign.github.io/onlinemapping/
 
 2) Create mapbox basemap style (https://www.mapbox.com/studio/). If you would like to represent existing facilities on this basemap, upload them as a tileset and style them. If you are unsure how to use mapbox, consult with Rohan, Kyle, or other Toole Design experts. 
-3) After publishing the style, replace the style URL in the index.html here (https://github.com/tooledesign/onlinemapping/blob/970000f174dbcc11b012d2ddb099b364e0d8fcf4/index.html#L195) with your own(e.g. mapbox://styles/tooledesign1/cji99oiov6yah2rpreel7y8my). On subsequent lines, adjust the center of the map (lat/long) and the initial map zoom level. 
-4) At this point, commit the changes in ou
+3) After publishing the style, replace the style URL in your index.html (https://github.com/tooledesign/onlinemapping/blob/970000f174dbcc11b012d2ddb099b364e0d8fcf4/index.html#L195) with your own (e.g. mapbox://styles/tooledesign1/cji99oiov6yah2rpreel7y8my). On subsequent lines, adjust the center of the map (lat/long) and the initial map zoom level. Make sure you have the correct mapbox access token on line 188 for the mapbox account you created the basemap in. The access token can be found here: https://www.mapbox.com/account/
+4) At this point, commit the changes to index.html at the bottom of the page and refresh your github.io page to see your basemap and 
 3) Develop surveygizmo survey with hidden id question. You can copy the surveygizmo survey here to start (https://app.surveygizmo.com/builder/build/id/4409855)
 4) Finalize proposed facility geojson file. Include the surveygizmo url with the segment's id as one of the attributes
 5) Upload the geojson to your github repository.
