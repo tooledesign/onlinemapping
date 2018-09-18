@@ -1,1 +1,90 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 263.67 69.58"><defs><style>.cls-1,.cls-2,.cls-3,.cls-4,.cls-5,.cls-6{fill:none;stroke-linecap:round;stroke-miterlimit:10;stroke-width:3px;}.cls-1,.cls-4{stroke:#54b048;}.cls-2,.cls-5{stroke:#f57f20;}.cls-3,.cls-6{stroke:#195b87;}.cls-4,.cls-5,.cls-6{stroke-dasharray:4.61 7.38;}.cls-10,.cls-11,.cls-12,.cls-13,.cls-14,.cls-15,.cls-7,.cls-8,.cls-9{isolation:isolate;}.cls-10,.cls-11,.cls-12,.cls-13,.cls-8,.cls-9{font-size:6.25px;}.cls-10,.cls-11,.cls-12,.cls-13,.cls-14,.cls-15,.cls-18,.cls-8,.cls-9{fill:#231f20;}.cls-10,.cls-11,.cls-14,.cls-15,.cls-18,.cls-8,.cls-9{font-family:Roboto-Regular, Roboto;}.cls-8{letter-spacing:-0.06em;}.cls-13,.cls-9{letter-spacing:-0.02em;}.cls-11{letter-spacing:-0.01em;}.cls-12,.cls-13{font-family:Roboto-Bold, Roboto;font-weight:700;}.cls-14,.cls-15{font-size:5.8px;}.cls-15{letter-spacing:-0.02em;}.cls-16{fill:#f0efef;}.cls-17{fill:#c2c1c0;}.cls-18{font-size:6.25px;}.cls-19{letter-spacing:-0.01em;}.cls-20{letter-spacing:0.02em;}.cls-21{letter-spacing:-0.02em;}.cls-22{letter-spacing:0.02em;}.cls-23{letter-spacing:-0.02em;}.cls-24{letter-spacing:-0.05em;}.cls-25{letter-spacing:-0.01em;}.cls-26{fill:#636464;}.cls-27{letter-spacing:-0.01em;}</style></defs><title>interactive_map_legend_9-17_2</title><line class="cls-1" x1="5.85" y1="21.29" x2="42.21" y2="21.29"/><line class="cls-2" x1="5.85" y1="40.22" x2="42.21" y2="40.22"/><line class="cls-3" x1="5.85" y1="59.85" x2="42.21" y2="59.85"/><line class="cls-1" x1="48.6" y1="21.29" x2="51.1" y2="21.29"/><line class="cls-4" x1="58.48" y1="21.29" x2="78.78" y2="21.29"/><line class="cls-1" x1="82.47" y1="21.29" x2="84.97" y2="21.29"/><line class="cls-2" x1="48.6" y1="40.22" x2="51.1" y2="40.22"/><line class="cls-5" x1="58.48" y1="40.22" x2="78.78" y2="40.22"/><line class="cls-2" x1="82.47" y1="40.22" x2="84.97" y2="40.22"/><line class="cls-3" x1="48.6" y1="59.85" x2="51.1" y2="59.85"/><line class="cls-6" x1="58.48" y1="59.85" x2="78.78" y2="59.85"/><line class="cls-3" x1="82.47" y1="59.85" x2="84.97" y2="59.85"/><g class="cls-7"><text class="cls-8" transform="translate(95.26 23.43)">T</text><text class="cls-9" transform="translate(98.76 23.43)">r</text><text class="cls-10" transform="translate(100.76 23.43)">ail</text></g><g class="cls-7"><text class="cls-10" transform="translate(95.26 38.89)">Sidepath /</text><text class="cls-10" transform="translate(95.26 46.39)">Sepa</text><text class="cls-9" transform="translate(109.19 46.39)">r</text><text class="cls-10" transform="translate(111.19 46.39)">ated Bi</text><text class="cls-11" transform="translate(130.43 46.39)">k</text><text class="cls-10" transform="translate(133.54 46.39)">e Lane</text></g><g class="cls-7"><text class="cls-10" transform="translate(95.26 61.99)">On-St</text><text class="cls-11" transform="translate(110.49 61.99)">r</text><text class="cls-10" transform="translate(112.55 61.99)">eet </text><text class="cls-9" transform="translate(122.77 61.99)">F</text><text class="cls-10" transform="translate(126.12 61.99)">acility</text></g><text class="cls-12" transform="translate(14.33 10.69)">Existing</text><g class="cls-7"><text class="cls-12" transform="translate(53.77 10.69)">P</text><text class="cls-13" transform="translate(57.8 10.69)">r</text><text class="cls-12" transform="translate(59.98 10.69)">oposed</text></g><text class="cls-12" transform="translate(181 10.69)">Boundaries</text><g class="cls-7"><text class="cls-14" transform="translate(49.75 56.64)">(</text><text class="cls-15" transform="translate(51.73 56.64)">F</text><text class="cls-14" transform="translate(54.84 56.64)">acility</text><text class="cls-15" transform="translate(69.9 56.64)"> </text><text class="cls-14" transform="translate(71.22 56.64)">TBD)</text></g><rect class="cls-16" x="181.45" y="19.24" width="15.8" height="9.68"/><rect class="cls-17" x="181.45" y="35" width="15.8" height="9.68"/><text class="cls-18" transform="translate(206.57 26.13)">City of <tspan class="cls-19" x="19.42" y="0">F</tspan><tspan x="22.82" y="0">o</tspan><tspan class="cls-20" x="26.38" y="0">r</tspan><tspan x="28.65" y="0">t </tspan><tspan class="cls-21" x="32.24" y="0">W</tspan><tspan x="37.7" y="0">o</tspan><tspan class="cls-22" x="41.26" y="0">r</tspan><tspan x="43.53" y="0">th</tspan></text><text class="cls-18" transform="translate(206.57 38.51)">Ext<tspan class="cls-23" x="8.7" y="0">r</tspan><tspan x="10.69" y="0">a-</tspan><tspan class="cls-24" x="15.82" y="0">T</tspan><tspan x="19.25" y="0">erri</tspan><tspan class="cls-25" x="28.31" y="0">t</tspan><tspan x="30.29" y="0">orial</tspan><tspan x="0" y="7.5">Jurisdictions</tspan></text><rect class="cls-26" x="181.45" y="52" width="15.8" height="9.68"/><text class="cls-18" transform="translate(206.57 58.88)">Outside Study A<tspan class="cls-27" x="44.24" y="0">r</tspan><tspan x="46.3" y="0">ea</tspan></text></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 263.7 69.6" style="enable-background:new 0 0 263.7 69.6;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#54B048;stroke-width:3;stroke-linecap:round;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#F57F20;stroke-width:3;stroke-linecap:round;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#195B87;stroke-width:3;stroke-linecap:round;stroke-miterlimit:10;}
+	.st3{fill:none;stroke:#54B048;stroke-width:3;stroke-linecap:round;stroke-miterlimit:10;stroke-dasharray:4.61,7.38;}
+	.st4{fill:none;stroke:#F57F20;stroke-width:3;stroke-linecap:round;stroke-miterlimit:10;stroke-dasharray:4.61,7.38;}
+	.st5{fill:none;stroke:#195B87;stroke-width:3;stroke-linecap:round;stroke-miterlimit:10;stroke-dasharray:4.61,7.38;}
+	.st6{fill:#231F20;}
+	.st7{font-family:'Roboto-Regular';}
+	.st8{font-size:6.25px;}
+	.st9{font-family:'Roboto-Bold';}
+	.st10{font-size:5.8px;}
+	.st11{fill:#F0EFEF;stroke:#515251;stroke-width:0.1;stroke-miterlimit:10;}
+	.st12{fill:#C2C1C0;}
+	.st13{fill:#636464;}
+</style>
+<title>interactive_map_legend_9-17_2</title>
+<line class="st0" x1="5.8" y1="21.3" x2="42.2" y2="21.3"/>
+<line class="st1" x1="5.8" y1="40.2" x2="42.2" y2="40.2"/>
+<line class="st2" x1="5.8" y1="59.8" x2="42.2" y2="59.8"/>
+<line class="st0" x1="48.6" y1="21.3" x2="51.1" y2="21.3"/>
+<line class="st3" x1="58.5" y1="21.3" x2="78.8" y2="21.3"/>
+<line class="st0" x1="82.5" y1="21.3" x2="85" y2="21.3"/>
+<line class="st1" x1="48.6" y1="40.2" x2="51.1" y2="40.2"/>
+<line class="st4" x1="58.5" y1="40.2" x2="78.8" y2="40.2"/>
+<line class="st1" x1="82.5" y1="40.2" x2="85" y2="40.2"/>
+<line class="st2" x1="48.6" y1="59.8" x2="51.1" y2="59.8"/>
+<line class="st5" x1="58.5" y1="59.8" x2="78.8" y2="59.8"/>
+<line class="st2" x1="82.5" y1="59.8" x2="85" y2="59.8"/>
+<g>
+	<text transform="matrix(1 0 0 1 95.26 23.43)" class="st6 st7 st8">T</text>
+	<text transform="matrix(1 0 0 1 98.76 23.43)" class="st6 st7 st8">r</text>
+	<text transform="matrix(1 0 0 1 100.76 23.43)" class="st6 st7 st8">ail</text>
+</g>
+<g>
+	<text transform="matrix(1 0 0 1 95.26 38.89)" class="st6 st7 st8">Sidepath /</text>
+	<text transform="matrix(1 0 0 1 95.26 46.39)" class="st6 st7 st8">Sepa</text>
+	<text transform="matrix(1 0 0 1 109.19 46.39)" class="st6 st7 st8">r</text>
+	<text transform="matrix(1 0 0 1 111.19 46.39)" class="st6 st7 st8">ated Bi</text>
+	<text transform="matrix(1 0 0 1 130.43 46.39)" class="st6 st7 st8">k</text>
+	<text transform="matrix(1 0 0 1 133.54 46.39)" class="st6 st7 st8">e Lane</text>
+</g>
+<g>
+	<text transform="matrix(1 0 0 1 95.26 61.99)" class="st6 st7 st8">On-St</text>
+	<text transform="matrix(1 0 0 1 110.49 61.99)" class="st6 st7 st8">r</text>
+	<text transform="matrix(1 0 0 1 112.55 61.99)" class="st6 st7 st8">eet</text>
+	<text transform="matrix(1 0 0 1 122.77 61.99)" class="st6 st7 st8">F</text>
+	<text transform="matrix(1 0 0 1 126.12 61.99)" class="st6 st7 st8">acility</text>
+</g>
+<text transform="matrix(1 0 0 1 14.33 10.69)" class="st6 st9 st8">Existing</text>
+<g>
+	<text transform="matrix(1 0 0 1 53.77 10.69)" class="st6 st9 st8">P</text>
+	<text transform="matrix(1 0 0 1 57.8 10.69)" class="st6 st9 st8">r</text>
+	<text transform="matrix(1 0 0 1 59.98 10.69)" class="st6 st9 st8">oposed</text>
+</g>
+<text transform="matrix(1 0 0 1 181 10.69)" class="st6 st9 st8">Boundaries</text>
+<g>
+	<text transform="matrix(1 0 0 1 49.75 56.64)" class="st6 st7 st10">(</text>
+	<text transform="matrix(1 0 0 1 51.73 56.64)" class="st6 st7 st10">F</text>
+	<text transform="matrix(1 0 0 1 54.84 56.64)" class="st6 st7 st10">acility</text>
+	<text transform="matrix(1 0 0 1 71.22 56.64)" class="st6 st7 st10">TBD)</text>
+</g>
+<rect x="181.4" y="19.2" class="st11" width="15.8" height="9.7"/>
+<rect x="181.4" y="35" class="st12" width="15.8" height="9.7"/>
+<text transform="matrix(1 0 0 1 206.57 26.13)" class="st6 st7 st8">City of </text>
+<text transform="matrix(1 0 0 1 225.99 26.13)" class="st6 st7 st8">F</text>
+<text transform="matrix(1 0 0 1 229.39 26.13)" class="st6 st7 st8">o</text>
+<text transform="matrix(1 0 0 1 232.95 26.13)" class="st6 st7 st8">r</text>
+<text transform="matrix(1 0 0 1 235.22 26.13)" class="st6 st7 st8">t </text>
+<text transform="matrix(1 0 0 1 238.81 26.13)" class="st6 st7 st8">W</text>
+<text transform="matrix(1 0 0 1 244.27 26.13)" class="st6 st7 st8">o</text>
+<text transform="matrix(1 0 0 1 247.83 26.13)" class="st6 st7 st8">r</text>
+<text transform="matrix(1 0 0 1 250.1 26.13)" class="st6 st7 st8">th</text>
+<text transform="matrix(1 0 0 1 206.57 38.51)" class="st6 st7 st8">Ext</text>
+<text transform="matrix(1 0 0 1 215.27 38.51)" class="st6 st7 st8">r</text>
+<text transform="matrix(1 0 0 1 217.26 38.51)" class="st6 st7 st8">a-</text>
+<text transform="matrix(1 0 0 1 222.39 38.51)" class="st6 st7 st8">T</text>
+<text transform="matrix(1 0 0 1 225.82 38.51)" class="st6 st7 st8">erri</text>
+<text transform="matrix(1 0 0 1 234.88 38.51)" class="st6 st7 st8">t</text>
+<text transform="matrix(1 0 0 1 236.86 38.51)" class="st6 st7 st8">orial</text>
+<text transform="matrix(1 0 0 1 206.57 46.01)" class="st6 st7 st8">Jurisdictions</text>
+<rect x="181.4" y="52" class="st13" width="15.8" height="9.7"/>
+<text transform="matrix(1 0 0 1 206.57 58.88)" class="st6 st7 st8">Outside Study A</text>
+<text transform="matrix(1 0 0 1 250.81 58.88)" class="st6 st7 st8">r</text>
+<text transform="matrix(1 0 0 1 252.87 58.88)" class="st6 st7 st8">ea</text>
+</svg>
